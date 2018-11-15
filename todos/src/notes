@@ -1,0 +1,18 @@
+change class to classname
+close sections by putting slash at end of index tags
+
+address error messages (change caps in autofocus, etc.)
+
+autofocus goes directly to a particular box
+
+checked in view needs to be changed to defaultchecked
+
+break up existing html into two components--todo item and listsss
+
+ul means unordered list, so todo-list will be inside todo list component... 
+
+li is a list item, this is one of the todo list
+
+todo item:
+
+write a new class todo item.
