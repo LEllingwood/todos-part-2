@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import "./App.css";
 import todoList from "./todos.json";
@@ -91,16 +90,16 @@ class App extends Component {
     if (event.keyCode === 13) {
       let newTodos = this.state.todos.slice(0);
       let newTodo = {
-        "userId": 1,
-        "id": Math.floor(Math.random() * 100) + 1,
-        "title": event.target.value,
-        "completed": false
+        userId: 1,
+        id: Math.floor(Math.random() * 30938409834) + 1,
+        title: event.target.value,
+        completed: false
       };
       newTodos.push(newTodo);
       this.setState({
         todos: newTodos
       });
-      console.log(this.state)
+      console.log(this.state);
     }
   };
 
@@ -121,11 +120,17 @@ class App extends Component {
             {this.state.todos.map(todo => (
               <TodoItem
                 title={todo.title}
+                key={todo.id}
                 completed={todo.completed}
                 completeTodo={this.handleToggleTodo(todo.id)}
                 handleDeleteTodo={this.handleDeleteTodo(todo.id)}
               />
             ))}
+            {/* <TodoItem */}
+            {/* title={"somethingToDo"} */}
+            {/* key={10} */}
+            {/* completed={true} */}
+            {/* /> */}
           </TodoList>
         </section>
         <footer className="footer">
